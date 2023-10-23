@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocking</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="font-sans">
+    <!-- head navigation -->
+    <div class="flex justify-between border-y border-gray-300 p-4 items-center">
+        <div class="font-bold">
+            <p>Your Brand icon</p>
+        </div>
+        <div class="font-bold space-x-11 text-gray-600 m-auto hidden md:block">
+            <span>Home</span>
+            <span>Invoices</span>
+            <span>Clients</span>
+            <span>Expenses</span>
+        </div>
+        <div class="flex flex-row items-center space-x-7 mr-5">
+            <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z" clip-rule="evenodd" />
+              </svg>
+              </div>
+              <div class="w-10 h-10 rounded-full bg-yellow-200"></div>
+        </div>
+    </div>
+    <!-- filter -->
+    <div class="flex flex-row justify-between p-5 border-b border-gray-300 items-center">
+        <div class="font-semibold space-y-2 md:space-x-5 flex flex-col md:flex-row">
+            <span class="md:border-r border-gray-300 md:px-5 text-gray-800 text-lg">Cashflow</span>
+            <div class=" space-x-5 flex items-center text-gray-700">
+                <p class="cursor-pointer hover:text-blue-700 filter">Last 7 days</p>
+                <p class="cursor-pointer hover:text-blue-700 filter">Last 30 days</p>
+                <p class="cursor-pointer hover:text-blue-700 filter">All-time</p>
+            </div>
+
+        </div>
+        <div>
+            <button class="text-white bg-blue-700 py-5 ml-5 md:px-4 md:py-2 rounded-md md:mr-4 transition duration-500 ease-out hover:scale-110">+ New Invoice</button>
+        </div>
+
+    </div>
+    <!-- overview -->
+    <div class="grid grid-rows-4 md:grid-cols-2 md:grid-rows-2 lg:grid-col-4 lg:grid-rows-1 border-b border-gray-300">
+        <div class="border-b md:border-r border-gray-200">
+            <div class="m-10 space-y-3 font-semibold">
+                <div class="flex justify-between" >
+                    <span class="text-gray-500 ">Revenue</span>
+                    <span>+4.75%</span>
+                </div>
+                <div class="text-3xl">$405,091.00</div>
+            </div>
+        </div>
+        <div class="border-b md:border-r border-gray-100 font-semibold">
+            <div class="m-10 space-y-3">
+                <div class="flex justify-between" >
+                    <span class="text-gray-500 ">Overdue invoices</span>
+                    <span class="text-rose-500 ">+54.02%</span>
+                </div>
+                <div class="text-3xl">$12,787.00</div>
+            </div>
+        </div>
+        <div class="border-b md:border-r border-gray-100 font-semibold">
+            <div class="m-10 space-y-3">
+                <div class="flex justify-between" >
+                    <span class="text-gray-500 ">Outstanding invoices</span>
+                    <span>-1.39%</span>
+                </div>
+                <div class="text-3xl">$245,988.00</div>
+            </div>
+        </div>
+        <div class="border-b md:border-r border-gray-100 font-semibold">
+            <div class="m-10 space-y-3">
+                <div class="flex justify-between" >
+                    <span class="text-gray-500 ">Expenses</span>
+                    <span class="text-rose-500 ">+10.18%</span>
+                </div>
+                <div class="text-3xl">$30,156.00</div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- recent activity -->
+    <div class="py-10  flex items-end">
+        <span class="font-semibold pl-10">Recent activity</span>
+    </div>
+    <div class="bg-gray-100 py-3 font-semibold border-y">
+        <span class="ml-7">Today</span>
+    </div>
+    <div>
+        <div class="flex flex-row py-4 border-b justify-between">
+            <div class="pl-10 hidden md:block"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" clip-rule="evenodd" />
+              </svg>
+              
+              </div>
+            <div class="w-1/2 pl-5">
+                <div class="flex flex-row">
+                    <span class="font-semibold">$7,600.00 USD</span>
+                    <div class="px-2 rounded border border-green-300 text-green-800 bg-green-100 text-sm  ml-3">Paid</div>
+                </div>
+                <span class="text-sm text-gray-600">$500.00 tax</span>
+            </div>
+            <div class="w-1/4 flex-col space-y-2 md:flex hidden">
+                <span class="">Reform</span>
+                <span class="text-xs text-gray-500">Website redesign</span>
+            </div>
+            <div class="md:w-1/4 flex flex-col space-y-2 text-end pr-10">
+                <span class="text-indigo-700 font-semibold hidden md:block">View transaction</span>
+                <span class="text-indigo-700 font-semibold md:hidden">View</span>
+                <div class="text-xs">
+                    <span class="text-gray-500">Invoice</span>
+                    <span>#00012</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex flex-row py-4 border-b justify-between">
+            <div class="pl-10 hidden md:block"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-.53 14.03a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V8.25a.75.75 0 00-1.5 0v5.69l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3z" clip-rule="evenodd" />
+              </svg>
+              
+              
+              </div>
+            <div class="w-1/2 pl-5">
+                <div class="flex flex-row">
+                    <span class="font-semibold">$10,000.00 USD</span>
+                    <div class="px-2 rounded border border-gray-300 text-gray-800 bg-gray-100 text-sm  ml-3">Withdraw</div>
+                </div>
+                <span class="text-sm text-gray-600"></span>
+            </div>
+            <div class="w-1/4 hidden md:flex flex-col space-y-2">
+                <span class="">	Tom Cook</span>
+                <span class="text-xs text-gray-500">Salary</span>
+            </div>
+            <div class="md:w-1/4 flex flex-col space-y-2 text-end pr-10">
+                <span class="text-indigo-700 font-semibold hidden md:block">View transaction</span>
+                <span class="text-indigo-700 font-semibold md:hidden">View</span>
+                <div class="text-xs">
+                    <span class="text-gray-500">Invoice</span>
+                    <span>#00011</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex flex-row py-4 border-b justify-between">
+            <div class="pl-10 hidden md:block"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+                <path fill-rule="evenodd" d="M4.755 10.059a7.5 7.5 0 0112.548-3.364l1.903 1.903h-3.183a.75.75 0 100 1.5h4.992a.75.75 0 00.75-.75V4.356a.75.75 0 00-1.5 0v3.18l-1.9-1.9A9 9 0 003.306 9.67a.75.75 0 101.45.388zm15.408 3.352a.75.75 0 00-.919.53 7.5 7.5 0 01-12.548 3.364l-1.902-1.903h3.183a.75.75 0 000-1.5H2.984a.75.75 0 00-.75.75v4.992a.75.75 0 001.5 0v-3.18l1.9 1.9a9 9 0 0015.059-4.035.75.75 0 00-.53-.918z" clip-rule="evenodd" />
+              </svg>
+              </div>
+            <div class="w-1/2 pl-5">
+                <div class="flex flex-row">
+                    <span class="font-semibold">$7,600.00 USD</span>
+                    <div class="px-2 rounded border border-red-300 text-red-800 bg-red-100 text-sm  ml-3">Overdue</div>
+                </div>
+                <span class="text-sm text-gray-600">$130.00 tax</span>
+            </div>
+            <div class="w-1/4 hidden md:flex flex-col space-y-2">
+                <span class="">Tuple</span>
+                <span class="text-xs text-gray-500">Logo design</span>
+            </div>
+            <div class="md:w-1/4 flex flex-col space-y-2 text-end pr-10">
+                <span class="text-indigo-700 font-semibold hidden md:block">View transaction</span>
+                <span class="text-indigo-700 font-semibold md:hidden">View</span>
+                <div class="text-xs">
+                    <span class="text-gray-500">Invoice</span>
+                    <span>#00009</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-gray-100 py-3 font-semibold border-y">
+        <span class="ml-7">Yesterday</span>
+    </div>
+    <div class="flex flex-row py-4 border-b justify-between">
+        <div class="pl-10 hidden md:block"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-gray-400">
+            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" clip-rule="evenodd" />
+          </svg>
+          </div>
+        <div class="w-1/2 pl-5">
+            <div class="flex flex-row">
+                <span class="font-semibold">$14,000.00 USD</span>
+                <div class="px-2 rounded border border-green-300 text-green-800 bg-green-100 text-sm ml-3">Paid</div>
+            </div>
+            <span class="text-sm text-gray-600">$900.00 tax</span>
+        </div>
+        <div class="w-1/4 hidden md:flex flex-col space-y-2">
+            <span class="">SavvyCal</span>
+            <span class="text-xs text-gray-500">Website redesign</span>
+        </div>
+        <div class="md:w-1/4 flex flex-col space-y-2 text-end pr-10">
+            <span class="text-indigo-700 font-semibold hidden md:block">View transaction</span>
+                <span class="text-indigo-700 font-semibold md:hidden">View</span>
+            <div class="text-xs">
+                <span class="text-gray-500">Invoice</span>
+                <span>#00009</span>
+            </div>
+        </div>
+
+
+</body>
+</html>
